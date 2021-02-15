@@ -14,7 +14,12 @@ class Polygon{
 class Triangle extends Polygon
 {
   get isValid(){
-    console.log(this.sides[2]+this.sides[1]>this.sides[0])
+    return (this.countSides == 3 && this.sides[0]+this.sides[1]>this.sides[2] && this.sides[0]+this.sides[2]>this.sides[1] && this.sides[2]+this.sides[1]>this.sides[0])
+  }
+}
+class Square extends Polygon
+{
+  get isValid(){
     return (this.countSides == 3 && this.sides[0]+this.sides[1]>this.sides[2] && this.sides[0]+this.sides[2]>this.sides[1] && this.sides[2]+this.sides[1]>this.sides[0])
   }
 }
