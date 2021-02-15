@@ -14,7 +14,7 @@ class Polygon{
 class Triangle extends Polygon
 {
   isValid(){
-    return (countSides == 3 && sides[0]+sides[1]>sides[2] && sides[1]+sides[0]>sides[2] && sides[2]+sides[1]>sides[0])
+    return (countSides() == 3 && sides[0]+sides[1]>sides[2] && sides[1]+sides[0]>sides[2] && sides[2]+sides[1]>sides[0])
   }
 }
   
